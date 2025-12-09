@@ -1,128 +1,70 @@
-# 🔍 Bakery Street Project
+# Bakery Street Project
 
-> *"When you have eliminated the impossible, whatever remains, however improbable, must be the truth."* — Sherlock Holmes
+<div align="center">
 
-**Autonomous AI Systems • Enterprise Security • Local LLM Inference • Multi-Agent Frameworks • Regulatory Technology**
+![Bakery Street Project Banner](https://via.placeholder.com/1200x300?text=Bakery+Street+Project+|+Enterprise+AI+&+Regulatory+Tech)
 
----
+**Deductive AI Innovation | Regulatory Technology | Neuromorphic Computing**
 
-## 🎯 Mission
+[![Enterprise](https://img.shields.io/badge/Enterprise-Grade-blue?style=for-the-badge&logo=microsoft)](https://github.com/Bakery-street-project)
+[![AI](https://img.shields.io/badge/AI-Autonomous-purple?style=for-the-badge&logo=openai)](https://github.com/Bakery-street-project)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://github.com/Bakery-street-project)
 
-We build **privacy-first, autonomous AI systems** inspired by the deductive brilliance of Sherlock Holmes. Led by **Kiliaan Vanvoorden**, our ecosystem specializes in:
-
-- 🤖 **Multi-Agent Orchestration** — Polymathic agents (Analyst, Artist, Engineer) working in concert
-- 🔒 **Enterprise-Grade Security** — Local LLM inference, no cloud dependencies
-- ⚖️ **Regulatory Technology** — Compliance-focused AI solutions for enterprise
-- ⛓️ **Blockchain Integration** — Self-funding AI via Solana economic loops
-- 🧠 **Neuromorphic Computing** — Experimental quantum/fractal navigation algorithms
+</div>
 
 ---
 
-## 🏗️ Architecture
+## 🏢 About The Organization
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    BAKERY STREET ECOSYSTEM                  │
-├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │ Terminal221b│  │ go-ai-coder │  │ Baker-Street-Lab    │  │
-│  │ (TUI Agent) │──│ (Go CLI)    │──│ (Research Platform) │  │
-│  │ TensorRT-LLM│  │ Ollama LLM  │  │ 7/8 AI Models       │  │
-│  └──────┬──────┘  └──────┬──────┘  └──────────┬──────────┘  │
-│         │                │                     │             │
-│         ▼                ▼                     ▼             │
-│  ┌─────────────────────────────────────────────────────────┐│
-│  │              Shared: configs/ → agents/ → outputs/      ││
-│  └─────────────────────────────────────────────────────────┘│
-│         │                │                     │             │
-│  ┌──────▼──────┐  ┌──────▼──────┐  ┌──────────▼──────────┐  │
-│  │ AurobotNav  │  │ discord-bot │  │ ai-dev-framework    │  │
-│  │ φ-A* Nav    │  │ Docker Sec  │  │ Orchestration       │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-```
+**Bakery Street Project** is a premier research and development organization dedicated to pioneering **Autonomous AI Systems**, **Regulatory Technology (RegTech)**, and **Neuromorphic Computing**. We bridge the gap between theoretical AI research and enterprise-grade implementation, focusing on privacy-first, secure, and scalable solutions.
+
+Our mission is to engineer intelligent agents that operate with the deductive reasoning of a detective and the precision of a machine, ensuring compliance and security in high-stakes environments.
+
+### 🚀 Core Mission Areas
+
+*   **🤖 Autonomous AI Systems:** Multi-agent orchestration, local LLM inference, and self-correcting coding agents.
+*   **⚖️ Regulatory Tech:** Automated compliance auditing, secure data handling, and enterprise governance frameworks.
+*   **🧠 Neuromorphic Computing:** Experimental architectures inspired by biological neural networks for next-gen efficiency.
 
 ---
 
-## 🚀 Featured Repositories
+## 🛠️ Enterprise Tech Stack
 
-| Repository | Description | Status |
-|------------|-------------|--------|
-| [**Terminal221b**](https://github.com/Bakery-street-project/Terminal221b) | Polymathic Autonomous Organization with Solana blockchain & TensorRT-LLM | ✅ Active |
-| [**go-ai-coder**](https://github.com/Bakery-street-project/go-ai-coder) | Enterprise AI coding assistant powered by Ollama | ✅ Active |
-| [**AurobotNav**](https://github.com/Bakery-street-project/AurobotNav) | PRIMECORE secure vessels + φ-A* navigation | ✅ Active |
-| [**discord-bot-automation**](https://github.com/Bakery-street-project/discord-bot-automation) | Docker-secured Discord bot with CI/CD | ✅ Active |
-| [**Baker-Street-Laboratory**](https://github.com/Bakery-street-project/Baker-Street-Laboratory) | AI Research Platform (7/8 models operational) | 📦 Archived |
-| [**ai-development-framework**](https://github.com/Bakery-street-project/ai-development-framework) | Multi-environment AI orchestration | 📦 Archived |
+We leverage a cutting-edge, polyglot technology stack to build robust and scalable solutions.
 
----
+### **Languages & Core Systems**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
+![NixOS](https://img.shields.io/badge/NixOS-5277C3?style=flat-square&logo=nixos&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-## 🛠️ Tech Stack
+### **Development Environment**
+![VST Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=flat-square&logo=visual-studio&logoColor=white)
+![JetBrains](https://img.shields.io/badge/JetBrains-000000?style=flat-square&logo=jetbrains&logoColor=white)
 
-| Category | Technologies |
-|----------|--------------|
-| **Languages** | Python, Go, Rust, JavaScript, Lua, C# |
-| **AI/ML** | TensorRT-LLM, Ollama, OpenAI SDK, Anthropic |
-| **Infrastructure** | Docker, NixOS, Kali Linux, GitHub Actions |
-| **Blockchain** | Solana |
-| **Tools** | JetBrains, VS Code, Jupyter, VST Studio |
-| **AI Partners** | Perplexity, Grok, Gemini, ChatGPT, Claude, Venice |
-
----
-
-## 🤝 Get Involved
-
-We welcome **collaborators, contributors, and partners** interested in:
-
-- 🔬 **Research**: Neuromorphic computing, autonomous agents, regulatory AI
-- 💼 **Enterprise**: Privacy-first AI solutions, compliance tech
-- 🎨 **Creative**: Sherlock Holmes-themed AI experiences
-- 💰 **Investment**: Self-funding AI economic models
-
-### Quick Start
-
-```bash
-# Clone all active repositories
-gh repo list Bakery-street-project --limit 20 --json name,isArchived \
-  --jq '.[] | select(.isArchived == false) | .name' | \
-  xargs -I{} gh repo clone Bakery-street-project/{}
-
-# Or clone a specific repo
-gh repo clone Bakery-street-project/Terminal221b
-```
-
-### Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feat/your-feature`
-3. Commit changes: `git commit -m "feat: add your feature"`
-4. Push and open a PR
-
-See [`.github/copilot-instructions.md`](.github/copilot-instructions.md) for AI agent guidelines.
+### **AI & Inference Engines**
+![TensorRT-LLM](https://img.shields.io/badge/TensorRT--LLM-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=flat-square&logo=google&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat-square&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-D96638?style=flat-square&logo=anthropic&logoColor=white)
+![Perplexity](https://img.shields.io/badge/Perplexity-222222?style=flat-square&logo=perplexity&logoColor=white)
+![Grok](https://img.shields.io/badge/Grok-000000?style=flat-square&logo=x&logoColor=white)
+![Venice](https://img.shields.io/badge/Venice.ai-000000?style=flat-square&logo=ai&logoColor=white)
 
 ---
 
-## 📊 Organization Stats
+## 📬 Contact & Collaboration
 
-- **Total Repositories**: 16
-- **Active Repositories**: 4
-- **Archived Repositories**: 12
-- **Primary Languages**: Python, Go, JavaScript, C#
-- **License**: MIT (most repos)
+We are open to enterprise partnerships, research collaborations, and investment opportunities.
 
----
-
-## 📬 Contact
-
-- **Owner**: Kiliaan Vanvoorden
-- **Email**: [kiliaan@bakerstreetproject221B.store](mailto:kiliaan@bakerstreetproject221B.store)
-- **Issues**: Open an issue in any repository
-- **Discussions**: Coming soon
-- **Partnerships**: Reach out via GitHub or Email
+*   **Business Inquiries:** [kiliaan@bakerstreetproject221B.store](mailto:kiliaan@bakerstreetproject221B.store)
+*   **Location:** Belgium ��🇪
 
 ---
 
-<p align="center">
-  <i>Deductive AI innovation from 221B Baker Street</i><br>
-  <b>© 2025 Bakery Street Project</b>
-</p>
+<div align="center">
+  <sub>© 2025 Bakery Street Project. All Rights Reserved.</sub>
+</div>
