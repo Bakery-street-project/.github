@@ -1,8 +1,10 @@
 # Summary
 
-- What does this PR do?
+- What does this PR change?
+- Why is this change needed?
 
 # Checklist
 
-- [ ] Tests added/updated
-- [ ] Docs updated if needed
+- [ ] Tests added/updated if relevant
+- [ ] Documentation updated if needed
+- [ ] Security impact reviewed
