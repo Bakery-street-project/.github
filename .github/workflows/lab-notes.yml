@@ -1,0 +1,168 @@
+name: 📓 Weekly Lab Notes Generator
+
+on:
+  schedule:
+    # Every Sunday at 23:00 UTC
+    - cron: '0 23 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  generate-lab-notes:
+    runs-on: ubuntu-latest
+    name: Generate Weekly AI Lab Notes
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests openai python-dateutil
+
+      - name: Collect weekly commits across org repos
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORG: Bakery-street-project
+        run: |
+          python3 << 'EOF'
+          import requests, json, os
+          from datetime import datetime, timedelta, timezone
+
+          token = os.environ["GH_TOKEN"]
+          org = os.environ["ORG"]
+          headers = {
+              "Authorization": f"Bearer {token}",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+              "User-Agent": "LabNotes-Action"
+          }
+
+          since = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
+          repos_resp = requests.get(f"https://api.github.com/orgs/{org}/repos?per_page=100", headers=headers)
+          repos = repos_resp.json()
+
+          all_commits = []
+          for repo in repos:
+              if isinstance(repo, dict) and not repo.get("archived"):
+                  name = repo["name"]
+                  commits_resp = requests.get(
+                      f"https://api.github.com/repos/{org}/{name}/commits?since={since}&per_page=50",
+                      headers=headers
+                  )
+                  if commits_resp.status_code == 200:
+                      for c in commits_resp.json():
+                          if isinstance(c, dict):
+                              msg = c.get("commit", {}).get("message", "").split("\n")[0]
+                              author = c.get("commit", {}).get("author", {}).get("name", "unknown")
+                              all_commits.append(f"[{name}] {author}: {msg}")
+
+          with open("/tmp/weekly_commits.txt", "w") as f:
+              f.write("\n".join(all_commits) if all_commits else "No commits this week.")
+          print(f"Collected {len(all_commits)} commits")
+          EOF
+
+      - name: Generate Lab Notes with AI
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python3 << 'EOF'
+          import os, json, requests
+          from datetime import datetime
+
+          with open("/tmp/weekly_commits.txt") as f:
+              commits_text = f.read()
+
+          week_label = datetime.now().strftime("Week of %B %d, %Y")
+          
+          api_key = os.environ.get("OPENAI_API_KEY")
+          if not api_key:
+              # Fallback: structured summary without AI
+              summary = f"""## What shipped this week
+
+{commits_text[:3000]}
+
+## Status
+_AI summarization unavailable — set OPENAI_API_KEY secret to enable intelligent summaries._
+"""
+          else:
+              from openai import OpenAI
+              client = OpenAI(api_key=api_key)
+              prompt = f"""You are a technical writer for Bakertreet Labs, an AI research organization.
+          
+          Below are the git commits from this past week across all repositories.
+          Write a concise, engaging "Lab Notes" entry (200-300 words) that:
+          1. Groups work by theme (e.g. agent improvements, infrastructure, research)
+          2. Highlights the most impactful changes
+          3. Uses a professional but slightly informal tone
+          4. Ends with a one-sentence "What's next" teaser
+          
+          Commits:
+          {commits_text[:4000]}
+          """
+              response = client.chat.completions.create(
+                  model="gpt-4o-mini",
+                  messages=[{"role": "user", "content": prompt}],
+                  max_tokens=500
+              )
+              summary = response.choices[0].message.content
+
+          lab_note = f"""# 📓 Lab Notes — {week_label}
+
+> _Automated weekly summary of engineering activity at Bakertreet Labs_
+
+---
+
+{summary}
+
+---
+_Generated automatically by the [Lab Notes workflow](../.github/workflows/lab-notes.yml) · {datetime.now().strftime("%Y-%m-%d %H:%M UTC")}_
+"""
+          with open("/tmp/lab_note.md", "w") as f:
+              f.write(lab_note)
+          print("Lab note generated")
+          EOF
+
+      - name: Publish Lab Note as GitHub Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 << 'EOF'
+          import requests, os
+          from datetime import datetime
+
+          with open("/tmp/lab_note.md") as f:
+              body = f.read()
+
+          token = os.environ["GH_TOKEN"]
+          week = datetime.now().strftime("Week of %B %d, %Y")
+
+          headers = {
+              "Authorization": f"Bearer {token}",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+              "User-Agent": "LabNotes-Action"
+          }
+          resp = requests.post(
+              "https://api.github.com/repos/Bakery-street-project/.github/issues",
+              headers=headers,
+              json={
+                  "title": f"📓 Lab Notes — {week}",
+                  "body": body,
+                  "labels": ["lab-notes"]
+              }
+          )
+          if resp.status_code == 201:
+              print(f"Issue created: {resp.json()['html_url']}")
+          else:
+              print(f"Failed: {resp.status_code} {resp.text}")
+          EOF
