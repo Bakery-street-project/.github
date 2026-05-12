@@ -9,6 +9,8 @@ title: Bakerstreet Labs
 
 We build practical, local-first AI tooling — multi-agent systems, LLM automation, and AI infrastructure that runs without cloud dependency.
 
+Watermark: `BAKERSTREET-LABS-2025`
+
 ---
 
 ## Featured Projects
@@ -41,4 +43,11 @@ Open for: AI/ML engineering contracts, consulting, open-source collaboration
 
 [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
 
+---
+
 *"Elementary, my dear engineer."*
+
+---
+
+**© 2025-2026 Bakerstreet Labs · Bakery Street Project · ALL RIGHTS RESERVED**  
+Watermark: `BAKERSTREET-LABS-2025`

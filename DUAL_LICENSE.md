@@ -1,12 +1,12 @@
-# ⚖️ Bakertreet Labs — Dual License Strategy
+# ⚖️ Bakerstreet Labs — Dual License Strategy
 
-Bakertreet Labs operates under a **dual-license model** to balance open-source community growth with sustainable commercial development.
+Bakerstreet Labs operates under a **dual-license model** to balance open-source community growth with sustainable commercial development.
 
 ---
 
 ## 🆓 MIT License (Community Edition)
 
-All core source code in Bakertreet Labs repositories is available under the **MIT License** for:
+All core source code in Bakerstreet Labs repositories is available under the **MIT License** for:
 
 - Personal projects
 - Academic research
@@ -47,4 +47,4 @@ We believe that **the best AI tools should be open at the core and sustainable a
 
 ---
 
-_Bakertreet Labs · Elementary, my dear engineer._ 🔍
+_Bakerstreet Labs · Elementary, my dear engineer._ 🔍

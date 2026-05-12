@@ -4,7 +4,7 @@ description: >
   We build practical, local-first AI tooling — multi-agent systems, LLM automation,
   and AI infrastructure that runs without cloud dependency. Founded by Kiliaan Vanvoorden.
 url: "https://bakery-street-project.github.io"
-baseurl: ""
+baseurl: "/.github"
 repository: Bakery-street-project/.github
 
 social:

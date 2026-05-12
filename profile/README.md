@@ -7,9 +7,11 @@
 [![Org](https://img.shields.io/badge/GitHub-Bakery--street--project-181717?logo=github&style=for-the-badge)](https://github.com/Bakery-street-project)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)]()
 
-<img src="https://avatars.githubusercontent.com/u/224890764?s=300" width="150" alt="Bakerstreet Labs" style="border-radius: 50%;">
+<img src="assets/org-avatar.png" width="120" alt="Bakerstreet Labs" style="border-radius: 50%;">
 
 </div>
+
+**Watermark:** `BAKERSTREET-LABS-2025`
 
 ---
 
@@ -56,5 +58,10 @@ Open for: AI/ML engineering contracts · technical consulting · open-source col
 <div align="center">
 
 *"Elementary, my dear engineer."*
+
+---
+
+**© 2025-2026 Bakerstreet Labs · Bakery Street Project · ALL RIGHTS RESERVED**  
+Watermark: `BAKERSTREET-LABS-2025`
 
 </div>
