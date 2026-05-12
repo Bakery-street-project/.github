@@ -51,7 +51,7 @@ Founded by **Kiliaan Vanvoorden** · Hasselt, Belgium
 
 Open for: AI/ML engineering contracts · technical consulting · open-source collaboration
 
-**Contact:** [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
+**Contact:** [kiliaanv2@gmail.com](mailto:kiliaanv2@gmail.com)
 
 ---
 

@@ -41,7 +41,7 @@ Autonomous AI research platform — 8 specialised models, multi-agent orchestrat
 
 Open for: AI/ML engineering contracts, consulting, open-source collaboration
 
-[bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
+[kiliaanv2@gmail.com](mailto:kiliaanv2@gmail.com)
 
 ---
 
