@@ -1,51 +1,60 @@
 <div align="center">
 
-# 🔬 Baker Street Project
+# Bakerstreet Labs
 
-### _Production-Ready AI Agents & Automation Infrastructure_
+### Production-Ready AI Agents & Automation Infrastructure
 
-[![GitHub Org](https://img.shields.io/badge/GitHub-Bakery--street--project-181717?logo=github&style=for-the-badge)](https://github.com/Bakery-street-project)
-[![Status](https://img.shields.io/badge/Status-Actively%20Building-brightgreen?style=for-the-badge)]()
+[![Org](https://img.shields.io/badge/GitHub-Bakery--street--project-181717?logo=github&style=for-the-badge)](https://github.com/Bakery-street-project)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)]()
+
+<img src="https://avatars.githubusercontent.com/u/224890764?s=300" width="150" alt="Bakerstreet Labs" style="border-radius: 50%;">
 
 </div>
 
 ---
 
-## 🚀 Mission
+## About
 
-> We build practical, local-first AI tooling — multi-agent systems, LLM automation, and AI infrastructure that runs without cloud dependency.
+**Bakerstreet Labs** engineers production-ready, local-first AI infrastructure — multi-agent orchestration, LLM automation pipelines, and self-hosted neural systems. All tooling runs without cloud dependency.
 
-Founded by [Kiliaan Vanvoorden](https://github.com/BoozeLee) · Hasselt, Belgium · Open for contracts & collaboration.
+Founded by **Kiliaan Vanvoorden** · Hasselt, Belgium
 
 ---
 
-## 🛠️ Tech Stack
+## Core Stack
 
-| Layer | Tools |
-|-------|-------|
+| Domain | Technologies |
+|--------|-------------|
 | **Languages** | Python · Go · Rust · TypeScript |
-| **AI/LLM** | Ollama · llama.cpp · LangChain · Hugging Face · OpenAI/Anthropic/Groq APIs |
-| **Infra** | Docker · GitHub Actions · Linux · FastAPI · Supabase |
-| **Agents** | Multi-agent orchestration · RAG pipelines · LLM routing |
+| **AI/LLM** | Ollama · llama.cpp · LangChain · OpenRouter · Groq |
+| **Frameworks** | FastAPI · Flutter · PyTorch · NetworkX |
+| **Infrastructure** | Docker · GitHub Actions · Linux · Supabase · Qdrant |
+| **Database** | PostgreSQL · SQLite · Redis · DuckDB |
 
 ---
 
-## ⭐ Featured Projects
+## Key Repositories
 
-### [go-ai-coder](https://github.com/Bakery-street-project/go-ai-coder)
-> Enterprise AI coding assistant — local LLM via Ollama, GitHub integration, web scraping. Built in Go. MIT licensed.
-
-### [ai-coding-agents](https://github.com/Bakery-street-project/ai-coding-agents)
-> Complete AI coding agent ecosystem — educational and production-ready agents with GitHub integration and AI learning.
-
-### [Baker-Street-Laboratory-1](https://github.com/BoozeLee/Baker-Street-Laboratory-1)
-> Autonomous AI research platform — 8 specialised models, multi-agent orchestration, FastAPI + Supabase.
+| Project | Description |
+|---------|-------------|
+| [go-ai-coder](https://github.com/Bakery-street-project/go-ai-coder) | Enterprise AI coding assistant — local LLM + GitHub integration |
+| [ai-coding-agents](https://github.com/Bakery-street-project/ai-coding-agents) | Production-ready multi-agent coding ecosystem |
+| [Baker-Street-Laboratory](https://github.com/BoozeLee/Baker-Street-Laboratory-1) | 8-specialist agent research platform (FastAPI + Supabase) |
+| [Primax AI](https://github.com/BoozeLee/primax-ai) | Neuromorphic AI — spiking neural nets, graph eigenvalue systems |
+| [The Last Dance](https://github.com/BoozeLee/thelastdance) | Multi-platform Flutter app: astrology + AI coaching |
 
 ---
 
-## 📬 Work With Us
+## Engagement
 
-Open to: AI/ML engineering contracts · consulting · open-source collaboration  
-**Contact:** bakerstreetbandit@zohomail.eu
+Open for: AI/ML engineering contracts · technical consulting · open-source collaboration
 
-_"Elementary, my dear engineer."_ 🔍
+**Contact:** [bakerstreetbandit@zohomail.eu](mailto:bakerstreetbandit@zohomail.eu)
+
+---
+
+<div align="center">
+
+*"Elementary, my dear engineer."*
+
+</div>
